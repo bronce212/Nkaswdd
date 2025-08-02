@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Flotante Verde Neón</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border: 5px solid #39ff14; /* Borde verde neón */
+      box-sizing: border-box;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    p {
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.1em;
+      margin: 20px 0;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .neon-button {
+      padding: 15px;
+      background: transparent;
+      border: 2px solid #39ff14;
+      color: #39ff14;
+      font-size: 1em;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .neon-button:hover {
+      transform: translateY(-3px);
+      background-color: rgba(57, 255, 20, 0.1);
+    }
+
+    @media (min-width: 500px) {
+      .button-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nova tech</h1>
+  <p>Hola bienvenido a la pagina web oficial de Nova tech aqui estaremos mostrando todo</p>
+
+  <div class="button-container">
+    <button class="neon-button">Core</button>
+    <button class="neon-button">Cohetes 2</button>
+    <button class="neon-button">Contactanos</button>
+    <button class="neon-button">Botón 4</button>
+    <button class="neon-button">Botón 5</button>
+  </div>
+
+</body>
+</html>
